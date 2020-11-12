@@ -37,3 +37,21 @@ a:hover {
     padding: 0px 20px;
     list-style: none;
 }
+
+/* FOOTER */
+
+footer {
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: #e5e0dd;
+    color: #e5e0dd;
+    text-align: center;
+ }
+ #conteudo-footer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+ }
