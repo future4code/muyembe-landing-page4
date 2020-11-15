@@ -14,11 +14,12 @@ header {
     position: fixed;
     top: 0;
     width: 80vw;
+    box-shadow: -5px 5px 10px #5a5a5a;
 }
 
 li {
     padding: 20px;
-    font-size: 20px;
+    font-size: 18px;
     border-left: black solid 1px;
 }
 
