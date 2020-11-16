@@ -15,6 +15,17 @@ header {
     padding: 20px 10%;
     top: 0;
     width: 80vw;
+    box-shadow: -5px 5px 10px #5a5a5a;
+}
+
+li {
+    padding: 20px;
+    font-size: 18px;
+    border-left: black solid 1px;
+}
+
+li:hover {
+    background-color: #b3a095;
 }
 
 li {
@@ -33,6 +44,7 @@ li:hover {
 
 a:hover {
     color: #613a24;
+    
 }
 
 .navBar li {
