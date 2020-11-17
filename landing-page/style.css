@@ -5,13 +5,14 @@
     color: #7c5744;
 }
 
+/* HEADER */
+
 header {
     background-color: #e5e0dd;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 20px 10%;
-    position: fixed;
     top: 0;
     width: 80vw;
     box-shadow: -5px 5px 10px #5a5a5a;
@@ -27,13 +28,15 @@ li:hover {
     background-color: #b3a095;
 }
 
-/* img {   
-    padding: 0;
-    margin: 0;
-    width: 10vw;
-    height: 20vh;
-    
-} */
+li {
+    padding: 20px;
+    font-size: 18px;
+    border-left: black solid 1px;
+}
+
+li:hover {
+    background-color: #b3a095;
+}
 
 .logo {
     cursor: pointer;
@@ -50,10 +53,109 @@ a:hover {
     list-style: none;
 }
 
+/* MAIN */
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+#secao1 {
+    width: 40%;
+    height: 400px;
+    margin: 4%;
+    transition: all 0.3s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/supermercado4.jpg);
+}
+
+#secao1:hover {
+    max-width: 50%;
+    transform: scale(1.2);
+}
+
+#secao1 h1 {
+    color: #e5e0dd;
+    text-align: center;
+    padding-top: 6%;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+#secao1 p {
+    color: #e5e0dd;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+#btn {
+    text-align: center;
+    margin-top: 36%;
+}
+
+.efeito {
+    width: 20%;
+    height: 16%;
+    color: #613a24;
+    border: none;
+    border-radius: 25%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: all 400ms ease;
+    background-color: #e5e0dd;
+}
+
+.efeito:hover {
+    color: #e5e0dd;
+    text-shadow: 2px 2px 3px#613a24;
+    background-color: #613a24;
+}
+
+#secao2 {
+    width: 40%;
+    height: 400px;
+    margin: 4%;
+    transition: all 0.6s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/restaurante-capa.jpg);
+}
+
+#secao2:hover {
+    max-width: 50%;
+    transform: scale(1.2);
+}
+
+#secao2 h1 {
+    color: #e5e0dd;
+    text-align: center;
+    padding-top: 6%;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+#secao2 p {
+    color: #e5e0dd;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #000000;
+}
+
 /* FOOTER */
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     background-color: #e5e0dd;
@@ -124,6 +226,48 @@ img {
 }
 
 @media (min-width: 240px) and (max-width: 480px) {
+    /* MAIN */
+    #container {
+        display: block;
+        width: 100%;
+    }
+    #secao1 {
+        width: 92%;
+        height: 300px;
+    }
+    #secao1:hover {
+        max-width: 100%;
+    }
+    #secao2 {
+        width: 92%;
+        height: 300px;
+    }
+    #secao2:hover {
+        max-width: 100%;
+    }
+    #secao1 h1 {
+        padding-top: 4%;
+        font-size: 28px;
+    }
+    #secao1 p {
+        font-size: 20px;
+    }
+    #secao2 h1 {
+        padding-top: 4%;
+        font-size: 28px;
+    }
+    #secao2 p {
+        font-size: 20px;
+    }
+    #btn {
+        text-align: center;
+        margin-top: 35%;
+    }
+    .efeito {
+        width: 20%;
+        height: 10%;
+    }
+    /* FOOTER */
     #div-logo {
         display: grid;
         grid-column: 3 / span 4;
@@ -154,5 +298,41 @@ img {
     #redes-sociais {
         grid-column: 4 / span 2;
         grid-row: 10 / span 1;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1070px) {
+    /* MAIN */
+    #secao1 {
+        width: 40%;
+        height: 400px;
+        margin: 4%;
+    }
+    #secao1 h1 {
+        padding-top: 8%;
+        font-size: 28px;
+    }
+    #secao1 p {
+        font-size: 24px;
+    }
+    #secao2 {
+        width: 40%;
+        height: 400px;
+        margin: 4%;
+    }
+    #secao2 h1 {
+        padding-top: 8%;
+        font-size: 28px;
+    }
+    #secao2 p {
+        font-size: 24px;
+    }
+    #btn {
+        text-align: center;
+        margin-top: 30%;
+    }
+    .efeito {
+        width: 20%;
+        height: 10%;
     }
 }
